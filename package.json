@@ -1,0 +1,14 @@
+{
+  "name": "the-challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss CSS/style.css -w"
+  },
+  "author": "Ahmad",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.87.0"
+  }
+}

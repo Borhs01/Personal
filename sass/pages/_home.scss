@@ -1,0 +1,97 @@
+.about{
+    margin-top: 0;
+    padding-top: 0;
+
+    max-width: 110rem;
+    margin: 0 auto;
+    padding: 1rem 5rem 10rem;
+    display: flex;
+    align-items: center;
+
+    &__img{
+        height: 40rem;
+        width: 30rem;
+        border-radius: 2rem;
+        box-shadow: 0 .4rem .6rem rgba($color-black, 0.1);
+
+        &:hover{
+            transform: scale(1.05);
+            transition: all 0.5s ease;
+        }
+    }
+    &__text{
+        margin-left: 5rem;
+        font-size: 1.8rem;
+        line-height: 1.5;
+        font-family: "Merriweather", serif;
+        color: $color-gray;
+
+        &--main{
+            font-weight: 700;
+            margin-bottom: 2rem;
+            text-align: justify;
+        
+        }
+        &--sub{
+            font-weight: 400;
+            margin-bottom: 2rem;
+            text-align: justify;
+        }
+    }
+}
+.project{
+    background-color: #d4d1d1;
+    padding: 5rem 0 12rem;
+}
+.skills__images{
+    height: 8rem;
+
+    &:hover{
+        scale: 1.1;
+    }
+}
+.bar__images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+    background-color: #d4d1d1;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+    }
+}
+.section__skills{
+    padding: 15rem 0;
+    background-color: $color-white;
+    margin: 0 auto;
+    max-width: 95rem;
+}
+.bar__images {
+    display: inline-flex;
+    vertical-align: top;
+    margin-right: 2rem;
+}
+.section__contact{
+    background-color: #d4d1d1;
+    padding: 5rem 0;
+}
+.contact__page{
+   background-image:linear-gradient(105deg, rgba($color-white, .1) 0%, rgba($color-white, .9) 50%, rgba($color-yellow-light, .9) 60%, $color-yellow-dark 80%), url(../../img/antipolygon-youtube-poBTCBgoZik-unsplash.jpg);
+    background-size: cover;
+    height: 50rem;
+   
+    border-radius: 1rem;
+    box-shadow: 1rem 3rem 2rem rgba($color-black, 0.1); 
+}
+.contact__page--form{
+    width: 50%;
+    padding: 6rem;
+}

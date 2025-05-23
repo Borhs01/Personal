@@ -1,0 +1,27 @@
+.card{
+    height: 50rem;
+    background-color: $color-white;
+    border-radius: 1rem;
+}
+.card__img{
+    height: 22rem;
+    width: 100%;
+    padding: 2rem ;
+    border-radius: 1rem 1rem 0 0;
+}
+.card__text{
+    padding: 0 2rem 2rem;
+    font-size: 1.28rem;
+    line-height: 1.5;
+    font-family: "Merriweather", serif;
+    color: #6b7688;
+    text-align: left;
+    font-weight: 400;
+}
+.card__title{
+    margin-top: 0rem;
+    color: $color-black;
+}
+.card__paragraph{
+    margin-top: 2rem;
+}
