@@ -308,7 +308,7 @@ body {
 .header__navigation a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff;
+  color: white;
   font-size: 1.5rem;
   font-family: "Merriweather", serif;
   transition: all 0.1s ease;
@@ -379,7 +379,7 @@ body {
 }
 
 .header {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(../img/samantha-gades-BlIhVfXbi9s-unsplash.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(../../img/samantha-gades-BlIhVfXbi9s-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -525,7 +525,7 @@ body {
 }
 
 .contact__page {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(249, 180, 49, 0.9) 60%, #f99131 80%), url(../../img/antipolygon-youtube-poBTCBgoZik-unsplash.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(249, 180, 49, 0.9) 60%, #f99131 80%), url(../img/antipolygon-youtube-poBTCBgoZik-unsplash.jpg);
   background-size: cover;
   height: 50rem;
   border-radius: 1rem;
