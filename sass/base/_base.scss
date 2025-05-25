@@ -5,7 +5,22 @@
 }
 html{
     font-size: 62.5%;
+
+    @include respond(tab-land){
+        font-size: 56.25%;
+    }
+    @include respond(phones){
+        font-size: 50%;
+    }
+    @include respond(tab-port){
+        font-size: 50%;
+    }
+    @include respond(large-screens){
+        font-size: 75%;
+    }
 }
+
+    
 body{
     font-family: 'Poppins', sans-serif;
     background-color: $color-white;
