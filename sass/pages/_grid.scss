@@ -61,7 +61,7 @@
           rgba($color-white, .9) 50%, 
           rgba($color-yellow-light, .9) 60%,
             $color-yellow-dark 80%), 
-            url(../../img/antipolygon-youtube-poBTCBgoZik-unsplash.jpg);
+            url(../img/antipolygon-youtube-poBTCBgoZik-unsplash.jpg);
 
         @include respond(phones){
             display: none;

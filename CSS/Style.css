@@ -77,6 +77,14 @@ body {
   left: 30%;
   transform: translate(-50%, -50%);
 }
+@media (max-width: 37.5em) {
+  .heading {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+  }
+}
 .heading__primary {
   font-family: "Montserrat", "Poppins", sans-serif;
   backface-visibility: hidden;
@@ -478,7 +486,7 @@ body {
 }
 
 .header {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(../../img/samantha-gades-BlIhVfXbi9s-unsplash.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(../img/samantha-gades-BlIhVfXbi9s-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -559,7 +567,7 @@ body {
   box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
   padding: 3rem;
   width: calc(3 * (100% - 18rem) / 4 + 12rem);
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(249, 180, 49, 0.9) 60%, #f99131 80%), url(../../img/antipolygon-youtube-poBTCBgoZik-unsplash.jpg);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(249, 180, 49, 0.9) 60%, #f99131 80%), url(../img/antipolygon-youtube-poBTCBgoZik-unsplash.jpg);
 }
 @media (max-width: 37.5em) {
   .row .col-3-of-4 {
@@ -668,10 +676,9 @@ body {
 }
 
 .section__skills {
-  padding: 15rem 0;
+  padding: 15rem 5rem;
   background-color: #fff;
   margin: 0 auto;
-  max-width: 80rem;
 }
 
 .bar__images {
