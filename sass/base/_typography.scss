@@ -5,12 +5,6 @@
     left: 30%;
     transform: translate(-50%, -50%);
 
-    @include respond(phones){
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
 
     &__primary{
         font-family: 'Montserrat', 'Poppins', sans-serif;
@@ -64,11 +58,20 @@
     font-weight: 400;
     text-align: center;
 
+    @include respond(phones){
+        font-size: 8rem;
+    }
+
     &--p{
         font-size: 2rem;
         color: $color-black;
         line-height: 1.7;
         font-weight: 500;
+
+    @include respond(phones){
+        font-size: 1.2rem;
+        text-align: center;
+    }
     }
     &--paragraph{
     font-size: 2.6rem;
@@ -76,6 +79,10 @@
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
     color: $color-white;
+
+    @include respond(phones){
+        font-size: 1.6rem;
+    }
 }
     
 }

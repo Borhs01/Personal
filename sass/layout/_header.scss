@@ -10,5 +10,10 @@
         height: 8rem;
         margin: 3rem;
         float: left;
+
+        @include respond(phones){
+            height: 5rem;
+            margin: 2rem;
+        }
     }
 }

@@ -18,10 +18,7 @@
         border-radius: 2rem;
         box-shadow: 0 .4rem .6rem rgba($color-black, 0.1);
 
-        @include respond(tab-port){
-            height: 60rem;
-            width: 50rem;
-        }
+        
 
         &--container{
             @include respond(tab-port){
@@ -102,7 +99,7 @@
     padding: 15rem 0;
     background-color: $color-white;
     margin: 0 auto;
-    max-width: 95rem;
+    max-width: 80rem;
 }
 .bar__images {
     display: inline-flex;
