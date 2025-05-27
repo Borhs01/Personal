@@ -5,6 +5,13 @@
     left: 30%;
     transform: translate(-50%, -50%);
 
+    @include respond(phones){
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
     &__primary{
         font-family: 'Montserrat', 'Poppins', sans-serif;
         backface-visibility: hidden;
@@ -18,6 +25,10 @@
             font-family: "Montserrat", sans-serif;
 
             animation: moveLeft 1s ease-in-out;
+
+            @include respond(phones){
+                font-size: 3rem;
+            }
         }
         &--sub{
             line-height: 1.5;
@@ -26,6 +37,10 @@
             font-weight: 400;
             
             animation: moveRight 1s ease-in-out;
+
+            @include respond(phones){
+                font-size: .9rem;
+            }
         }
     }
 }
@@ -38,6 +53,10 @@
     line-height: 1.5;
     margin: 4rem 0;
     color: $color-black;
+
+    @include respond(phones){
+        font-size: 2rem;
+    }
 }
 .heading__experience{
     color: $color-yellow-dark;

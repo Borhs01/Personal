@@ -16,6 +16,10 @@
     list-style: none;
     float: left;
 
+    @include respond(phones){
+        display: none;
+    }
+
     li {
         margin: 4rem 2rem;
         display: inline-block;

@@ -8,11 +8,28 @@
     display: flex;
     align-items: center;
 
+    @include respond(tab-port){
+            display: block;
+        }
+
     &__img{
         height: 40rem;
         width: 30rem;
         border-radius: 2rem;
         box-shadow: 0 .4rem .6rem rgba($color-black, 0.1);
+
+        @include respond(tab-port){
+            height: 60rem;
+            width: 50rem;
+        }
+
+        &--container{
+            @include respond(tab-port){
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
 
         &:hover{
             transform: scale(1.05);
@@ -61,11 +78,24 @@
     border-radius: 50%;
     overflow: hidden;
 
+    @include respond(tab-port){
+        height: 10rem;
+        width: 10rem;
+        border-radius: 50%;
+    }
+
     img {
         display: block;
         max-width: 100%;
         max-height: 100%;
         margin: auto;
+
+        @include respond(tab-port){
+            padding: 2rem 0;
+        }
+        @include respond(phones){
+            padding: 1rem 0;
+        }
     }
 }
 .section__skills{
@@ -82,16 +112,46 @@
 .section__contact{
     background-color: #d4d1d1;
     padding: 5rem 0;
+
+     @include respond(tab-port){
+            padding: 5rem 0;
+        }
 }
 .contact__page{
-   background-image:linear-gradient(105deg, rgba($color-white, .1) 0%, rgba($color-white, .9) 50%, rgba($color-yellow-light, .9) 60%, $color-yellow-dark 80%), url(../img/antipolygon-youtube-poBTCBgoZik-unsplash.jpg);
+  background-image:linear-gradient(105deg,
+         rgba($color-white, .1) 0%,
+         rgba($color-white, .9) 50%, 
+         transparent 60%), 
+         url(../img/antipolygon-youtube-poBTCBgoZik-unsplash.jpg);
     background-size: cover;
-    height: 50rem;
-   
+    // height: 50rem;
     border-radius: 1rem;
     box-shadow: 1rem 3rem 2rem rgba($color-black, 0.1); 
+
+    @include respond(tab-land){
+        background-image:linear-gradient(105deg,
+         rgba($color-white, .1) 0%,
+         rgba($color-white, .9) 65%, 
+         transparent 65%), 
+         url(../img/antipolygon-youtube-poBTCBgoZik-unsplash.jpg);
+    }
+    @include respond(tab-port){
+        background-image:linear-gradient(to right,
+         rgba($color-white, .1) 0%,
+         rgba($color-white, .9) 100%), 
+         url(../img/antipolygon-youtube-poBTCBgoZik-unsplash.jpg);
+    }
 }
 .contact__page--form{
     width: 50%;
     padding: 6rem;
+
+    @include respond(tab-land){
+        width: 65%;
+         padding: 2rem;
+    }
+    @include respond(tab-port){
+        width: 100%;
+         padding: 2rem;
+    }
 }

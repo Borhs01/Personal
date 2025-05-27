@@ -13,6 +13,11 @@
     width: 80%;
     border-bottom: .3rem solid transparent;
 
+    @include respond(phones){
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
     &:focus:invalid{
         border-bottom: .3rem solid red;
     }
@@ -58,6 +63,11 @@
     border: none;
     width: 80%;
     border-bottom: .3rem solid transparent;
+
+    @include respond(phones){
+        font-size: 1.2rem;
+        width: 100%;
+    }
 
     &:focus:invalid{
         border-bottom: .3rem solid red;
