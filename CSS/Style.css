@@ -81,8 +81,8 @@ body {
   .heading {
     position: absolute;
     top: 50%;
-    left: 30%;
-    transform: translate(-30%, -30%);
+    left: 15%;
+    transform: translate(-15%, -15%);
   }
 }
 .heading__primary {
