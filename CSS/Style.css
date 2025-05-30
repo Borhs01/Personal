@@ -81,8 +81,8 @@ body {
   .heading {
     position: absolute;
     top: 50%;
-    left: 35%;
-    transform: translate(-50%, -50%);
+    left: 30%;
+    transform: translate(-30%, -30%);
   }
 }
 .heading__primary {
@@ -374,14 +374,14 @@ body {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  z-index: 121324343;
+  z-index: 121;
 }
 
 .header__navigation {
   list-style: none;
   float: left;
 }
-@media (max-width: 37.5em) {
+@media (max-width: 56.25em) {
   .header__navigation {
     display: none;
   }
@@ -393,7 +393,7 @@ body {
 .header__navigation a {
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
+  color: #fff;
   font-size: 1.5rem;
   font-family: "Merriweather", serif;
   transition: all 0.1s ease;
@@ -482,7 +482,6 @@ body {
   text-decoration: none;
   color: gray;
   font-size: 1.4rem;
-  margin-left: 2rem;
 }
 
 .header {
@@ -729,6 +728,126 @@ body {
     width: 100%;
     padding: 2rem;
   }
+}
+
+.navigationphone {
+  display: none;
+}
+.navigationphone__checkbox {
+  display: none;
+}
+@media (max-width: 37.5em) {
+  .navigationphone {
+    display: block;
+  }
+}
+.navigationphone__button {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 2.5rem;
+  right: 2rem;
+  background-color: #fff;
+  z-index: 4000;
+  text-align: center;
+  cursor: pointer;
+}
+.navigationphone__background {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 2.5rem;
+  right: 2rem;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+  box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+  z-index: 2000;
+  transition: transform 0.3s;
+}
+.navigationphone__bar {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 3000;
+  opacity: 0;
+  width: 0;
+  transition: all 0.3;
+}
+.navigationphone__nav {
+  position: absolute;
+  top: 25%;
+  right: 40%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+}
+.navigationphone__items:link, .navigationphone__items:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+  line-height: 1.7;
+  font-weight: 600;
+  font-family: "Merriweather", serif;
+  text-align: center;
+  padding: 0.1rem;
+}
+.navigationphone__items:hover, .navigationphone__items:active {
+  transition: all 0.1s ease;
+  border-bottom: 0.2rem solid #f99131;
+  padding: 0.1rem;
+  box-sizing: border-box;
+}
+.navigationphone__checkbox:checked ~ .navigationphone__background {
+  transform: scale(40);
+}
+.navigationphone__checkbox:checked ~ .navigationphone__bar {
+  opacity: 1;
+  width: 100%;
+}
+.navigationphone__toggle {
+  position: relative;
+  margin-top: 1.8rem;
+}
+.navigationphone__toggle, .navigationphone__toggle::before, .navigationphone__toggle::after {
+  width: 2rem;
+  height: 0.2rem;
+  background-color: #000;
+  display: inline-block;
+}
+.navigationphone__toggle::before, .navigationphone__toggle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+.navigationphone__toggle::before {
+  top: -0.6rem;
+}
+.navigationphone__toggle::after {
+  top: 0.6rem;
+}
+.navigationphone__button:hover .navigationphone__toggle::before {
+  top: -0.7rem;
+}
+.navigationphone__button:hover .navigationphone__toggle::after {
+  top: 0.7rem;
+}
+.navigationphone__checkbox:checked + .navigationphone__button .navigationphone__toggle {
+  background-color: transparent;
+}
+.navigationphone__checkbox:checked + .navigationphone__button .navigationphone__toggle::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+.navigationphone__checkbox:checked + .navigationphone__button .navigationphone__toggle::after {
+  top: 0;
+  transform: rotate(-135deg);
 }
 
 /*# sourceMappingURL=style.css.map */

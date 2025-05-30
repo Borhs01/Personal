@@ -10,13 +10,13 @@
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    z-index: 121324343;
+    z-index: 121;
 }
 .header__navigation{
     list-style: none;
     float: left;
 
-    @include respond(phones){
+    @include respond(tab-port) {
         display: none;
     }
 
@@ -27,7 +27,7 @@
     a {
         text-decoration: none;
         text-transform: uppercase;
-        color: white;
+        color: $color-white;
         font-size: 1.5rem;
         font-family: "Merriweather", serif;
         transition: all 0.1s ease;
