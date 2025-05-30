@@ -80,7 +80,7 @@
           box-sizing: border-box;
     }
     &__checkbox:checked ~ &__background{
-        transform: scale(40);
+        transform: scale(80);
     }
     &__checkbox:checked ~ &__bar{
         opacity: 1;

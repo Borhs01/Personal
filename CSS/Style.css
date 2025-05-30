@@ -804,7 +804,7 @@ body {
   box-sizing: border-box;
 }
 .navigationphone__checkbox:checked ~ .navigationphone__background {
-  transform: scale(40);
+  transform: scale(80);
 }
 .navigationphone__checkbox:checked ~ .navigationphone__bar {
   opacity: 1;
