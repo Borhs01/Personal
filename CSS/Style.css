@@ -100,7 +100,7 @@ body {
 }
 @media (max-width: 37.5em) {
   .heading__primary--main {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 .heading__primary--sub {
@@ -112,7 +112,7 @@ body {
 }
 @media (max-width: 37.5em) {
   .heading__primary--sub {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -128,7 +128,7 @@ body {
 }
 @media (max-width: 37.5em) {
   .heading__secondary {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -140,7 +140,7 @@ body {
 }
 @media (max-width: 37.5em) {
   .heading__experience {
-    font-size: 8rem;
+    font-size: 10rem;
   }
 }
 .heading__experience--p {
@@ -179,6 +179,10 @@ body {
 .right {
   text-align: right;
   padding: 3.6rem 0;
+}
+
+.icons {
+  font-size: 2rem;
 }
 
 .u-center {
@@ -760,7 +764,7 @@ body {
   position: fixed;
   top: 2.5rem;
   right: 2rem;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(110, 110, 110, 0.25);
   backdrop-filter: blur(1rem);
   -webkit-backdrop-filter: blur(1rem);
   box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);

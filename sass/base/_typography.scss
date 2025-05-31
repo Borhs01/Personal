@@ -28,7 +28,7 @@
             animation: moveLeft 1s ease-in-out;
 
             @include respond(phones){
-                font-size: 3rem;
+                font-size: 4rem;
             }
         }
         &--sub{
@@ -40,7 +40,7 @@
             animation: moveRight 1s ease-in-out;
 
             @include respond(phones){
-                font-size: .9rem;
+                font-size: 1.2rem;
             }
         }
     }
@@ -56,7 +56,7 @@
     color: $color-black;
 
     @include respond(phones){
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 }
 .heading__experience{
@@ -66,7 +66,7 @@
     text-align: center;
 
     @include respond(phones){
-        font-size: 8rem;
+        font-size: 10rem;
     }
 
     &--p{
@@ -103,4 +103,8 @@
 .right{
     text-align: right;
     padding: 3.6rem 0;
+}
+
+.icons{
+    font-size: 2rem;
 }
