@@ -53,6 +53,10 @@
         }
     }
 }
+.skills__bar{
+    display: flex;
+    justify-content: center;
+}
 .project{
     background-color: #d4d1d1;
     padding: 5rem 0 12rem;
@@ -65,9 +69,6 @@
     }
 }
 .bar__images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 3rem 0;
     background-color: #d4d1d1;
     height: 13rem;
